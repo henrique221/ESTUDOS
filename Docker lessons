@@ -1,0 +1,30 @@
+docker container run --publish 80:80 --detach nginx
+
+docker container run --publish 80:80 nginx
+
+env - variaveis de ambiente
+grep - fazer busca/filtros em texto
+for i in `condicao`; do faca algo; done;
+
+
+vi containers.txt 
+➜  ~ for i in `cat containers.txt`; do echo $i; done;
+jamal
+henrique
+verzola
+
+
+➜  ~ for i in `cat containers.txt`; do docker run -d --name=$i nginx; done;
+
+
+➜  ~ export henrique=3
+➜  ~ env
+
+
+docker rm $(docker ps -a -q)
+
+
+vim .zshrc
+wq = exit and save
+qa! = exit
+
